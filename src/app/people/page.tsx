@@ -1,5 +1,4 @@
 "use client";
-import DirectoryTable from "@/components/DirectoryTable";
 import React, { Fragment, useEffect } from "react";
 import { DataTable } from "./data-table";
 import { data } from "@/lib/data";
