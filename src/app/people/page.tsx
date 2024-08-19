@@ -13,7 +13,7 @@ const Page = (props: Props) => {
   const storeData = useAppSelector((state) => state.users.data);
 
   return (
-    <Suspense>
+    <Suspense fallback={null}>
       <DataTable data={storeData} columns={columns} />
     </Suspense>
   );

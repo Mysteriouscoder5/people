@@ -47,7 +47,7 @@ const PeopleInfo = ({ user }: Props) => {
     <Card className="absolute z-10 right-0 top-0 bottom-0 w-2/3 overflow-hidden text-white">
       <div className="flex flex-row items-center gap-6 p-5 w-full bg-sky-700 relative">
         <Image
-          src={user?.avatarUrl as string}
+          src={user?.avatarUrl}
           alt={user?.name}
           width={100}
           height={100}

@@ -1,7 +1,7 @@
 import { Publication, User } from "@/app/people/columns";
 import { faker } from "@faker-js/faker";
 
-faker.seed(123);
+faker.seed(12);
 function createRandomUser(): User {
   const name = faker.person.fullName();
   const firstName = name.split(" ")[0];
