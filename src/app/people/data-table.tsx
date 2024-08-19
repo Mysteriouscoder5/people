@@ -33,7 +33,12 @@ import AddMemberDialog from "@/components/AddMemberDialog";
 import React, { useEffect, useState } from "react";
 import { User } from "./columns";
 import PeopleInfo from "@/components/PeopleInfo";
-import { redirect, useRouter, useSearchParams } from "next/navigation";
+import {
+  redirect,
+  useParams,
+  useRouter,
+  useSearchParams,
+} from "next/navigation";
 import { roleFilterFunction, teamsFilterFunction } from "./filterFunctions";
 import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 import { setSelectedUser } from "@/lib/features/users/usersSlice";

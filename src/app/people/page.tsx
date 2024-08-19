@@ -1,5 +1,5 @@
 "use client";
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, Suspense, useEffect } from "react";
 import { DataTable } from "./data-table";
 import { data } from "@/lib/data";
 import { columns, User } from "./columns";
@@ -13,9 +13,9 @@ const Page = (props: Props) => {
   const storeData = useAppSelector((state) => state.users.data);
 
   return (
-    <Fragment>
+    <Suspense>
       <DataTable data={storeData} columns={columns} />
-    </Fragment>
+    </Suspense>
   );
 };
 
